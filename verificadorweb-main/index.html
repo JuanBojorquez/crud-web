@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador Web</title>
+    <style>
+        body {
+            background-image: url('https://cdn.wallpapersafari.com/2/63/xcqYZ8.jpg');
+            font-family: 'Manrope', sans-serif;
+            background-size: cover;
+        }
+        div {
+            height: 270px;
+            width: 270px;
+            margin: auto;
+        
+           
+        }
+
+        img {
+            object-fit:cover;
+            width: 100%;
+            height: 100%;
+            
+        }
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            margin: 60px;
+            color:rgb(14, 77, 14);
+        }
+        .title {
+            text-align: center;
+            font-size: 70px;
+            margin: 60px;
+            color:#087206;
+            font-family: 'MS', cursive;
+        }
+		
+		
+    </style>
+
+    <script type="text/javascript">
+
+        if (window.addEventListener) {
+            var codigo = "";
+            window.addEventListener("keydown", function (e) {
+                codigo += String.fromCharCode(e.keyCode);
+                if (e.keyCode == 13) {
+                    window.location = "mostrar_producto.php?codigo=" + codigo;
+                    codigo = "";
+                }
+            }, true);
+        }
+    </script>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+
+<body>
+    <h1 class="title">EL SUPER DE TU COLONIA</h1>
+    <div>
+        <img src="img/barcode-scan.gif" alt="" width="" height="">
+    </div>
+    <h1>Favor de ingresar el código de barras abajo</h1>
+</body>
+
+</html>
